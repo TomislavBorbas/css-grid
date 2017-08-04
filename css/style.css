@@ -1,0 +1,242 @@
+/** responsive variables **/
+/* font-weights */
+/** margins **/
+/** paddings **/
+/** colors **/
+/** font-sizes **/
+/* header */
+header {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1100px;
+  margin: auto;
+  padding: 3.4em 0 2.5em 0; }
+  header ul.tabs {
+    grid-template-columns: repeat(2, 1fr); }
+    header ul.tabs li {
+      grid-row-start: 1;
+      grid-row-end: 2; }
+      header ul.tabs li a img {
+        max-width: 100%; }
+  header .title {
+    font-size: 1.3rem;
+    color: #000; }
+
+/* main */
+main {
+  max-width: 1100px;
+  margin: auto; }
+  main #one {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 2.1em; }
+    @media screen and (max-width: 1124px) {
+      main #one {
+        grid-template-columns: repeat(3, 3fr); } }
+    @media screen and (max-width: 860px) {
+      main #one {
+        grid-template-columns: repeat(2, 4fr); } }
+    @media screen and (max-width: 580px) {
+      main #one {
+        grid-template-columns: repeat(1, 8fr); } }
+  main .product {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    min-width: 15.625em;
+    min-height: 15.000em;
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: auto 30px; }
+    main .product .product-image {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      background: #d1f5f0;
+      padding: 10px;
+      text-align: center; }
+    main .product .product-info {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      padding: 15px 10px;
+      background: #fff; }
+      main .product .product-info .title {
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 15px;
+        color: #000; }
+      main .product .product-info .short-info {
+        font-size: 12px;
+        font-weight: 400;
+        display: block;
+        margin-bottom: 15px;
+        color: #b6b6b6; }
+      main .product .product-info .writer {
+        font-size: 11px;
+        font-weight: 300;
+        display: block;
+        color: #bbbbbb; }
+    main .product .action {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      background: #b3e9ef;
+      grid-template-columns: auto 45px;
+      display: grid; }
+      main .product .action .rating {
+        font-size: 12px;
+        color: #666666;
+        padding-left: 10px;
+        background: url("../images/products/rating-star.svg") 10px center no-repeat;
+        background-size: 25px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
+        main .product .action .rating img {
+          width: 25px;
+          height: 100%; }
+        main .product .action .rating span {
+          height: 30px;
+          display: inline-block;
+          vertical-align: top;
+          line-height: 30px;
+          padding: 1px 0 0 30px; }
+      main .product .action .options {
+        color: #666666;
+        font-size: 12px;
+        text-align: center;
+        background: url("../images/products/more.svg") center no-repeat;
+        background-size: 25px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
+        main .product .action .options img {
+          width: 25px;
+          height: 100%; }
+      main .product .action.active .rating {
+        background: #0098c7 url("../images/products/rating-star-hover.svg") 10px center no-repeat;
+        background-size: 25px; }
+        main .product .action.active .rating span {
+          color: #fff; }
+        main .product .action.active .rating img {
+          fill: #fff; }
+      main .product .action.active .options {
+        background: #404040 url("../images/products/more-hover.svg") center no-repeat;
+        background-size: 25px; }
+    main .product img {
+      max-width: 100%; }
+    main .product ul.navigation {
+      background: #404040;
+      grid-row: 5;
+      grid-column: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      text-align: right;
+      z-index: 2; }
+      main .product ul.navigation li {
+        padding: 10px 15px 10px 0; }
+        main .product ul.navigation li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 13px; }
+        main .product ul.navigation li:hover {
+          background: #4a4a4a; }
+        main .product ul.navigation li.last a {
+          font-size: 9px;
+          padding-right: 10px; }
+        main .product ul.navigation li.last:hover {
+          background: #404040; }
+  main .transition-spec {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  main #two {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0; }
+    @media screen and (max-width: 1124px) {
+      main #two {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media screen and (max-width: 860px) {
+      main #two {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media screen and (max-width: 580px) {
+      main #two {
+        grid-template-columns: repeat(1, 1fr); } }
+    main #two .product {
+      grid-template-columns: 74.68% 5.5% 19.8%;
+      grid-template-rows: 60px;
+      min-height: initial;
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-top: 0;
+      /* second div in this case (list view) */
+      /* first div in this case (list view) */
+      /* third div in this case (list view) */ }
+      main #two .product.first {
+        border-top: 1px solid rgba(0, 0, 0, 0.3); }
+      main #two .product .product-image {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        padding: 0 15px;
+        line-height: 60px; }
+      main #two .product .product-info {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-template-columns: 235px auto 160px;
+        grid-template-rows: 60px;
+        display: grid;
+        padding: 0 20px;
+        align-items: center; }
+        main #two .product .product-info span {
+          margin: 0; }
+        main #two .product .product-info span.short-info {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        main #two .product .product-info span.writer {
+          justify-self: end; }
+      main #two .product .action {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        align-items: center;
+        background: #fff; }
+        main #two .product .action .options {
+          align-self: stretch;
+          min-height: 5em; }
+        main #two .product .action.active .rating {
+          background: #fff url("../images/products/rating-star.svg") 10px center no-repeat;
+          background-size: 25px; }
+          main #two .product .action.active .rating span {
+            color: #666; }
+      main #two .product ul.navigation {
+        justify-self: end; }
+        main #two .product ul.navigation li {
+          padding: 10px 15px 10px 30px; }
+          main #two .product ul.navigation li.last {
+            padding: 0 15px 15px 30px; }
+            main #two .product ul.navigation li.last a {
+              padding: 0; }
+          main #two .product ul.navigation li.first {
+            padding-top: 15px; }
+    main #two .titles {
+      display: grid;
+      grid-template-columns: 235px 505px 75px 60px 174px;
+      margin-bottom: 15px; }
+      main #two .titles span {
+        padding-left: 20px;
+        font-size: 12px; }
+        main #two .titles span:first-child {
+          grid-column-start: 1;
+          grid-column-end: 1; }

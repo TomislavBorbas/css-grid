@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS GRID</title>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/sanitize.css" type="text/css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span class="title">Books</span>
+        <ul class="tabs">
+            <li><a href="#one"> <span>Grid</span><img src="images/header/grid.svg"/></a></li>
+            <li><a href="#two"><span>List</span><img src="images/header/list.svg"/></a></li>
+        </ul>
+    </header>
+
+
+    <main>
+        <section class="tab_container">
+            <article id="one" class="tab_content">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">The Wizard of Oz</span>
+                        <span class="short-info">Dorothy found herself riding easily between two of the biggest Monkeys, on of them the King himself. They had made a chair of their hands and were careful not to hurt her. "Why do you have to obey the charm of the golden Cap?"</span>
+                        <span class="writer">L. Frank Baum</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>16</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">Mobi Dick</span>
+                        <span class="short-info">Round the World! There is much in that sound to inspire proud feelings; but whereto does all that circumnavigation conduct? Only throught numberless perils to the very point when we started, where those that are left behind secure, were all the time before us.</span>
+                        <span class="writer">Herman Melville</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>28</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">The War of the Worlds</span>
+                        <span class="short-info">"What news from the common?" I said. "People seem fair silly about the common," said the woman over the gate.</span>
+                        <span class="writer">H. G. Wells</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>19</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">At the Earth's Core</span>
+                        <span class="short-info">I wondered why these agile creatures required connecting bridges between the trees, but later when I saw the motley aggregation of half-savage beasts which they kept withing their village I realized the necessity for the pathways.</span>
+                        <span class="writer">Edgar Rice Burroughs</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>8</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">A princess of Mars</span>
+                        <span class="short-info">I drew rein on a little level promontory overlooking the trail below and to my left, and saw the party of pursuing savages disappearing around the point of a neighboring peak.</span>
+                        <span class="writer">Edgar Rice Burroughs</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>11</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">Alice in Wonderland</span>
+                        <span class="short-info">THe Hatter shook his head mournfully. 'Not!' he replied. 'We quarrelled last March-just before HE went mad, you know -'</span>
+                        <span class="writer">Lewis Carroll</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>21</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">The Scarlet Plague</span>
+                        <span class="short-info">It was at this point that Hare-Lip rose to his feet, an expression of huge contempt on his face. "Granser," he announced, "you make me sick with your gabble."</span>
+                        <span class="writer">Jack London</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>13</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">Around the World in 80 Days</span>
+                        <span class="short-info">Nothing could be more simple. Indeed, it was all so simple that Fix and Passepartout felt their hearts beating as if they would crack. They were lsitening for the whistle agreed upon, when suddenly savage cries resounded in the air, accompanied by reports which certainly did not issue from the car where the duellists were.</span>
+                        <span class="writer">Julius Verne</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>18</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article id="two" class="tab_content">
+                <div class="titles">
+                    <span>Title</span>
+                    <span>Quote</span>
+                    <span>Author</span>
+                    <span>Cover</span>
+                    <span>Likes</span>
+                </div>
+                <div class="product first">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">The Wizard of Oz</span>
+                        <span class="short-info">Dorothy found herself riding easily between two of the biggest Monkeys, on of them the King himself. They had made a chair of their hands and were careful not to hurt her. "Why do you have to obey the charm of the golden Cap?"</span>
+                        <span class="writer">L. Frank Baum</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>16</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li class="first"><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">Mobi Dick</span>
+                        <span class="short-info">Round the World! There is much in that sound to inspire proud feelings; but whereto does all that circumnavigation conduct? Only throught numberless perils to the very point when we started, where those that are left behind secure, were all the time before us.</span>
+                        <span class="writer">Herman Melville</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>28</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">The War of the Worlds</span>
+                        <span class="short-info">"What news from the common?" I said. "People seem fair silly about the common," said the woman over the gate.</span>
+                        <span class="writer">H. G. Wells</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>19</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">At the Earth's Core</span>
+                        <span class="short-info">I wondered why these agile creatures required connecting bridges between the trees, but later when I saw the motley aggregation of half-savage beasts which they kept withing their village I realized the necessity for the pathways.</span>
+                        <span class="writer">Edgar Rice Burroughs</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>8</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">A princess of Mars</span>
+                        <span class="short-info">I drew rein on a little level promontory overlooking the trail below and to my left, and saw the party of pursuing savages disappearing around the point of a neighboring peak.</span>
+                        <span class="writer">Edgar Rice Burroughs</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>11</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">Alice in Wonderland</span>
+                        <span class="short-info">THe Hatter shook his head mournfully. 'Not!' he replied. 'We quarrelled last March-just before HE went mad, you know -'</span>
+                        <span class="writer">Lewis Carroll</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>21</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">The Scarlet Plague</span>
+                        <span class="short-info">It was at this point that Hare-Lip rose to his feet, an expression of huge contempt on his face. "Granser," he announced, "you make me sick with your gabble."</span>
+                        <span class="writer">Jack London</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>13</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/products/book.jpg"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="title">Around the World in 80 Days</span>
+                        <span class="short-info">Nothing could be more simple. Indeed, it was all so simple that Fix and Passepartout felt their hearts beating as if they would crack. They were lsitening for the whistle agreed upon, when suddenly savage cries resounded in the air, accompanied by reports which certainly did not issue from the car where the duellists were.</span>
+                        <span class="writer">Julius Verne</span>
+                    </div>
+                    <div class="action">
+                        <div class="rating"><span>18</span></div>
+                        <div class="options"></div>
+                        <ul class="navigation">
+                            <li><a href="#">Edit book details</a></li>
+                            <li><a href="#">Duplicate book</a></li>
+                            <li><a href="#">Move book</a></li>
+                            <li><a href="#">Delete book</a></li>
+                            <li class="last"><a href="#">Delete this book permanently</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+
+
+
+
+</html>
